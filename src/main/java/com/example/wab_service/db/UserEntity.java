@@ -9,6 +9,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
 
+import java.time.LocalDateTime;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -22,9 +24,19 @@ public class UserEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String userName;
+    private String email;
 
     private String password;
 
-    private String email;
+    private String name;
+
+    private String birthDate;
+
+    private String gender;
+
+    private String address;
+
+    private String phoneNumber;
+
+    private LocalDateTime createdAt;
 }

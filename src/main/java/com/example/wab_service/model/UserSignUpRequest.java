@@ -10,13 +10,19 @@ import lombok.*;
 @AllArgsConstructor
 @ToString
 @JsonNaming(value = PropertyNamingStrategies.SnakeCaseStrategy.class)
-public class UserRequest {
+public class UserSignUpRequest {
 
-    private Long Id;
-
-    private String userName;
+    private String email;
 
     private String password;
 
-    private String email;
+    private String name;
+
+    private String birthDate;
+
+    private String gender;
+
+    private String address;
+
+    private String phoneNumber;
 }
