@@ -1,4 +1,4 @@
-package com.example.wab_service;
+package com.example.web_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
