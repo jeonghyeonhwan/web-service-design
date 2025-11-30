@@ -19,3 +19,21 @@
 
 ## 📁 프로젝트 구조
 
+com.example.web_service
+│
+├── WebServiceApplication.java # Spring Boot 실행 파일
+│
+├── db
+│ └── ApiResponse.java # 표준 응답 형식 클래스
+│
+├── middleware
+│ └── RequestLoggingFilter.java # 모든 요청 로그 출력 미들웨어
+│
+├── controller
+│ └── TodoController.java # 8개의 REST API 제공
+│
+├── service
+│ └── TodoService.java # 메모리 기반 Todo 저장/조회 로직
+│
+└── model
+└── Todo.java # Todo 데이터 모델
